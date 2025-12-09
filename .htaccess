@@ -1,0 +1,17 @@
+# Prevent directory listing
+Options -Indexes
+
+# Block access to sensitive files
+<FilesMatch "\.(env|ini|log|sh|sql|sqlite|git|htaccess|htpasswd)$">
+    Require all denied
+</FilesMatch>
+
+# Deny access to includes/ folder from web
+RewriteEngine On
+RewriteRule ^includes/ - [F,L]
+
+# Optional: Force trailing slash or handle clean URLs (commented out)
+# If you ever implement clean URLs, uncomment and adjust
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*)$ index.php [QSA,L]

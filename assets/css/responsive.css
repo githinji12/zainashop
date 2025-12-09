@@ -1,0 +1,44 @@
+/* assets/css/responsive.css */
+
+/* Hide sidebar on small screens */
+@media (max-width: 992px) {
+  .sidebar {
+    display: none !important;
+  }
+  .main-content {
+    margin-left: 0 !important;
+  }
+}
+
+/* Increase touch target on buttons for mobile */
+@media (max-width: 576px) {
+  button, .btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+  }
+}
+
+/* Collapse navbar items into full-width blocks on xs */
+@media (max-width: 576px) {
+  .navbar-nav .nav-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem 0;
+  }
+}
+
+/* Adjust form controls at small sizes */
+@media (max-width: 768px) {
+  .form-control {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+/* Utility: full-width tables on small screens */
+@media (max-width: 576px) {
+  .table-responsive {
+    overflow-x: scroll;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "zaina-beauty",
+  "version": "1.0.0",
+  "description": "- Role-based access (Admin, Staff, Employee)\r - POS with cart & mobile payment simulation\r - Product & service management\r - Client CRM with loyalty points\r - Expense tracking\r - Sales & inventory reports\r - Task management\r - Settings & notifications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.3"
+  }
+}

@@ -1,0 +1,56 @@
+/* assets/css/gradient-card.css */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.gradient-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(76, 68, 182, 0.15);
+  max-width: 420px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 2.5rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.7s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px);}
+  to   { opacity: 1; transform: none;}
+}
+.gradient-card .logo {
+  max-width: 90px;
+  margin-bottom: 1.2rem;
+}
+.gradient-card h2, .gradient-card h3 {
+  color: #4c44b6;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.gradient-card .subtitle {
+  color: #888;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.gradient-card .form-label {
+  font-weight: 500;
+}
+.gradient-card .btn {
+  width: 100%;
+  margin-top: 1rem;
+}
+.gradient-card .footer-link {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+}
+.gradient-card .footer-link a {
+  color: #764ba2;
+  text-decoration: underline;
+}
