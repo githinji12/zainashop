@@ -3,9 +3,9 @@
 <?php
 session_start();
 if (isset($_SESSION['user_id'])) {
-    header('Location: /dashboard/');
+    header('Location: /zaina-beauty/dashboard/');
 } else {
-    header('Location: /auth/login.php');
+    header('Location: /zaina-beauty/auth/login.php');
 }
 exit();
 ?>
